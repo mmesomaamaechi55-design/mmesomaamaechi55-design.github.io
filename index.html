@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Amaechi Mmesomachukwu GodLiveth | Writer, Educator & Literary Scholar</title>
+
+<meta name="description" content="Official website of Amaechi Mmesomachukwu GodLiveth — writer, educator, literary scholar and speaker.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f1e9;
+  color: #171717;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  height: 80px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd5c9;
+  position: sticky;
+  top: 0;
+  background: rgba(245,241,233,0.96);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  color: #171717;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  color: #9b7730;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #171717;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+nav a:hover {
+  color: #9b7730;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  padding: 9vw;
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 7vw;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #8a6d36;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1 {
+  font-size: clamp(3.4rem, 8vw, 7rem);
+  line-height: .94;
+  letter-spacing: -3px;
+  margin-bottom: 25px;
+}
+
+h1 em {
+  font-weight: 600;
+}
+
+.hero-text {
+  max-width: 650px;
+  font-size: 1.15rem;
+  color: #5a554e;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  background: #171717;
+  color: white;
+  text-decoration: none;
+  padding: 13px 22px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #9b7730;
+}
+
+.portrait {
+  height: 440px;
+  background: #d8d0c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  transform: rotate(2deg);
+}
+
+section {
+  padding: 9vw;
+  max-width: 1400px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 25px;
+  letter-spacing: -1.5px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+}
+
+.about p {
+  color: #5a554e;
+  margin-bottom: 18px;
+}
+
+.dark {
+  max-width: none;
+  background: #1b1b1b;
+  color: #f5f1e9;
+}
+
+.dark .eyebrow {
+  color: #d7b66a;
+}
+
+.cards {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid #484541;
+  padding: 35px 28px;
+  min-height: 270px;
+}
+
+.card-number {
+  color: #d7b66a;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin: 18px 0;
+}
+
+.card p {
+  color: #bbb5ab;
+}
+
+.wide {
+  max-width: 760px;
+  color: #5a554e;
+  font-size: 1.1rem;
+}
+
+.timeline {
+  margin-top: 45px;
+  border-top: 1px solid #d9d1c5;
+}
+
+.timeline div {
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d1c5;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.timeline span {
+  color: #777;
+}
+
+.accent {
+  max-width: none;
+  background: #d7b66a;
+  text-align: center;
+}
+
+.accent .eyebrow {
+  color: #4d3c1d;
+}
+
+.accent p {
+  max-width: 750px;
+  margin: auto auto 25px;
+  color: #302715;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.portfolio article {
+  border-top: 2px solid #171717;
+  padding-top: 20px;
+}
+
+.portfolio h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.portfolio p {
+  color: #666;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  color: #666;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.socials a {
+  color: #171717;
+  font-weight: 700;
+}
+
+footer {
+  padding: 30px 7%;
+  border-top: 1px solid #ddd5c9;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: .85rem;
+}
+
+@media (max-width: 800px) {
+
+  header {
+    padding: 0 6%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 18vw 7%;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cards,
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 18vw 7%;
+  }
+
+  .timeline div {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="#home" class="logo">AMG<span>.</span></a>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#writing">Writing</a>
+    <a href="#academic">Academic</a>
+    <a href="#speaking">Speaking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+<section id="home" class="hero">
+
+  <div>
+    <div class="eyebrow">
+      WRITER • EDUCATOR • LITERARY SCHOLAR • SPEAKER
+    </div>
+
+    <h1>
+      Amaechi<br>
+      <em>Mmesomachukwu</em><br>
+      GodLiveth.
+    </h1>
+
+    <p class="hero-text">
+      A creative and academic voice exploring stories, literature,
+      education and the experiences that shape young people.
+    </p>
+
+    <a href="#writing" class="button">
+      Explore My Work
+    </a>
+  </div>
+
+  <div class="portrait">
+    AMG
+  </div>
+
+</section>
+
+
+<section id="about" class="about">
+
+  <div>
+    <div class="eyebrow">ABOUT</div>
+
+    <h2>
+      A voice between literature,
+      education and real life.
+    </h2>
+  </div>
+
+  <div>
+    <p>
+      Amaechi Mmesomachukwu GodLiveth is a Nigerian writer,
+      educator and literary scholar with interests in creative
+      writing, English and literary studies, teaching and
+      conversations around young people's lives.
+    </p>
+
+    <p>
+      His work brings together the imaginative freedom of
+      storytelling and the discipline of academic inquiry —
+      creating space for stories that entertain, ideas that
+      teach and conversations that matter.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="writing" class="dark">
+
+  <div class="eyebrow">WRITING</div>
+
+  <h2>
+    Words, stories & ideas.
+  </h2>
+
+  <div class="cards">
+
+    <article class="card">
+      <div class="card-number">01</div>
+      <h3>Fiction</h3>
+      <p>
+        Romance, drama and character-driven stories built around
+        emotion, conflict and human connection.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="card-number">02</div>
+      <h3>Essays & Articles</h3>
+      <p>
+        Thoughts on literature, education, student life,
+        personal development and questions young people face.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="card-number">03</div>
+      <h3>Poetry</h3>
+      <p>
+        Reflective writing that turns feelings, memories and
+        observations into language.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="academic">
+
+  <div class="eyebrow">ACADEMIC</div>
+
+  <h2>
+    Learning, teaching & literary study.
+  </h2>
+
+  <p class="wide">
+    My academic interests sit at the intersection of English
+    language, literature, education and the human experience.
+  </p>
+
+  <div class="timeline">
+
+    <div>
+      <strong>English & Literary Studies</strong>
+      <span>Academic background</span>
+    </div>
+
+    <div>
+      <strong>Creative Writing</strong>
+      <span>Fiction • Drama • Poetry</span>
+    </div>
+
+    <div>
+      <strong>Education</strong>
+      <span>Teaching • Student development</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="speaking" class="accent">
+
+  <div class="eyebrow">SPEAKING</div>
+
+  <h2>
+    Conversations that leave people thinking.
+  </h2>
+
+  <p>
+    Interested in speaking on literature, education, student life,
+    emotional intelligence, stress, personal development and the
+    transition from school into the wider world.
+  </p>
+
+  <br>
+
+  <a href="#contact" class="button">
+    Get In Touch
+  </a>
+
+</section>
+
+
+<section>
+
+  <div class="eyebrow">PORTFOLIO</div>
+
+  <h2>
+    Selected work.
+  </h2>
+
+  <div class="portfolio">
+
+    <article>
+      <small>CREATIVE WRITING</small>
+      <h3>Stories in Progress</h3>
+      <p>
+        Original fiction and story concepts will be featured here.
+      </p>
+    </article>
+
+    <article>
+      <small>ACADEMIC WORK</small>
+      <h3>Research & Literary Studies</h3>
+      <p>
+        Selected academic projects, presentations and research
+        will be featured here.
+      </p>
+    </article>
+
+    <article>
+      <small>SPEAKING</small>
+      <h3>Talks & Presentations</h3>
+      <p>
+        Speaking engagements and educational conversations will
+        be added here.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+  <div class="eyebrow">CONTACT</div>
+
+  <h2>
+    Let's create something meaningful.
+  </h2>
+
+  <p>
+    For writing, speaking, collaboration or professional
+    enquiries, connect through the links below.
+  </p>
+
+  <div class="socials">
+
+    <a href="https://www.instagram.com/leeflynn555/" target="_blank">
+      Instagram ↗
+    </a>
+
+    <a href="https://x.com/IamLiveth" target="_blank">
+      X / Twitter ↗
+    </a>
+
+    <a href="https://www.linkedin.com/" target="_blank">
+      LinkedIn ↗
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <strong>Amaechi Mmesomachukwu GodLiveth</strong>
+
+  <span>
+    © 2026 • Writer. Educator. Literary Scholar.
+  </span>
+
+</footer>
+
+</body>
+  </html>
